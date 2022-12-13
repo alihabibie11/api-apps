@@ -88,7 +88,7 @@ class BlogController extends Controller
         ]);
         // dd($request->all());
         $update = Blog::findOrFail($blog->id);
-        dd($update);
+        // dd($update);
         $blog->update($request->all());
 
         return [
